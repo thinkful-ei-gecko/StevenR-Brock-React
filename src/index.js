@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import STORE from './STORE'
-import RouletteGun from './state-drills/RouletteGun'
+import Accordion from './state-drills/Accordion'
 
 ReactDOM.render(
-  <RouletteGun />,
+  <Accordion />,
   document.getElementById('root'),
 );
