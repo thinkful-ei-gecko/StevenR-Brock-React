@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import STORE from './STORE'
-// import MyDrillName from './state-drills/MyDrillName'
+import HelloWorld from './state-drills/HelloWorld'
 
 ReactDOM.render(
-  <App store={STORE} />,
+  <HelloWorld />,
   document.getElementById('root'),
 );
