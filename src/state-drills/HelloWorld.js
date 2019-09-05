@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default HelloWorld {
+export default class HelloWorld extends Component {
     state = {
-        who: `world`,
+        who: 'world',
     };
     
     render() {
         return (
           <div className='HelloWorld'>
               <p>Hello, {this.state.who}</p>
-              <button>
-                onClick
+              <button
+                onClick={() => this.SetState({who: 'world' })}
+                >
+                    World
               </button>
-              <button>
+              
 
+              <button
+              onClick={() => this.SetState({ who: 'friend' })}
+              >
+                Friend
               </button>
-              <button>
-
+             
+              <button
+              onClick={() => this.SetState({ who: 'React' })}
+              >
+                React
               </button>
           </div>  
         )
     }
-};
+}
